@@ -1,5 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 .container {
     max-width: 960px;
-    /* width: 90%; */
+    width: 90%;
     margin: 0 auto;
+}
+/************** Header ***************/
+header{
+    width: 100%;
+    height: 100vh;
+    background: #fcdb00;
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 30px;
+}
+
+.menu {
+    display: flex;
+    width: 250px;
+    margin: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#000;
+}
+
+.header-inspire {
+    margin-top: 40px;
+}
+
+.header-inspire_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-inspire-text {
+    width: 410px;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.header-inspire-text h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.header-inspire-text p {
+    font-size: .9em;
+    margin-bottom: 1em;
+}
+
+.big {
+    font-size: 1.1rem !important ; 
+}
+
+.header-inspire-icon {
+    margin-top: 2rem;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.header-inspire-icon i {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.header-inspire-img {
+    text-align: center;
+}
+/************** Features ***************/
+
+.features {
+    width: 100%;
+    height: 400px;
+    padding: 7rem 0;
+    background: #fff;
+}
+
+.features-header {
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+}
+
+.features-header h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.features-header p {
+    margin-top: 1rem;
+}
+
+.features-grid {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.features-items {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.features-icon {
+    width: 200px;
+    text-align: center;
+}
+
+.features-icon i {
+    font-size: 2rem;
+}
+
+.features-text h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.features-text p {
+    font-size: .9rem;
+    margin-top: 1rem;
+    color: #666;
+}
+/************** Footer ***************/
+footer {
+    width: 100%;
+    height: 450px;
+    padding: 7rem 0;
+    background: #010101;
+}
+
+.keepintouch {
+    text-align: center;
+}
+
+.keepintouch h1 {
+    color: #fcdb00;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.keepintouch p {
+    color: #898989;
+    margin-top: 1rem;
+}
+
+.input {
+    margin: 2rem 0;
+}
+
+.input input[type="text"] {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.input input[type="submit"] {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    width: 100px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fcdb00;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto 3rem auto;
+}
+
+.social li {
+    width: 40px;
+    height: 35px;
+    background-color: #fcdb00;
+    border-radius: .3rem;
+}
+
+.social i {
+    font-size: 1.5rem;
+    margin-top: .3rem;
+    color: #000;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.footer-menu-items {
+    padding: 0 2rem;
+    color: #fff;
+    font-family: .9rem;
+}
+
+.footer-menu-items ul {
+    text-align: left;
+}
+
+.footer-menu-items ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/************** Resposive ***************/
+
+@media only screen and (max-width: 480px) {
+
+    header{
+        height: auto;
+    }
+
+    nav {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    .menu {
+        margin: 0;
+        width: 100%;
+    }
+
+    .header-inspire_grid {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    
+    .header-inspire-text{
+        width: 100%;
+    }
+
+    .header-inspire-icon {
+        width:  50%;
+        margin: 0 auto;
+    }
+
+    .header-inspire-img{
+        margin: 2rem 0;
+    }
+
+    .features{
+        height: auto;
+    }
+
+    .features-header{
+        width: 100%;
+    }
+
+    .features-grid{
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .input input[type="text"] {
+        width: 300px;
+        margin-bottom: 2.3rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-menu-items ul {
+        text-align: center;
+    }
+
 }
